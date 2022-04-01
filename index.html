@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
     <style>
         h1{
             font-size: 40px;
@@ -19,18 +22,26 @@
         }
         .sess {
             font-size: 12px;
+            padding: 9px;
+            background-color: rgb(172, 182, 197);
         }
         #desc {
             font-size: 30px;
         }
         #textodesc {
-            font-size: 25px;
+            font-size: 20px;
+        }
+        #titlesession {
+            background-color: rgb(172, 182, 197);
+            font-size: 16px;
         }
  body { 
-     background-color: rgb(175, 172, 172);
-     color: rgb(34, 97, 34);
+     background-color: rgb(204, 214, 230);
+     color: rgb(35, 26, 71);
+     text-align: justify;
+     font-family: 'Merriweather', serif;
+     letter-spacing: -1px;
      text-align: center;
-     
  }
 
 
@@ -39,8 +50,9 @@
     text-decoration: underline;
 }
 
-p1 {
+#par1 {
     font-size: 20px;
+    line-height: 50px;
 }
 
  .logos {
@@ -53,33 +65,40 @@ p1 {
  }
  #empat {
      font-size: 30px;
+     line-height: 50px;
+    
  }
  .outrashabil {
-     font-size: 20px;
+     font-size: 22px;
+     line-height: 50px;
+
  }
  #eumsm {
      border-radius: 50%;
+ }
+ #blog{
+     font-size: 20px;
  }
 
     </style>
 </head>
 <body>
    <h1> Portfólio Web de César Xavier</h1> 
-   <ul><h4>Sessões</h4>
-    <li><a class="sess" href="#foto">Quem sou eu</a></li>
-    <li><a class="sess" href="#desc">Descrição</a></li>
-    <li><a class="sess" href="#infos">Informações Gerais</a></li>
-    <li><a class="sess" href="#blog">Blog que recomendo</a></li>
-    <li><a class="sess" href="#redes">Redes Socias</a></li>
+   <h4 id="titlesession">Sessões</h4>
+    <a class="sess" href="#foto">Quem sou eu</a>
+    <a class="sess" href="#desc">Descrição</a>
+    <a class="sess" href="#infos">Informações Gerais</a>
+    <a class="sess" href="#blog">Blog que recomendo</a>
+    <a class="sess" href="#redes">Redes Socias</a>
     <hr>
-</ul>
+
    <h2 id="foto"> Quem sou eu: </h2> 
    <img id="eumsm" src="images/eu.png" width="190px" alt="uma foto minha na praia">
    <hr>
    <h4 id="infos"> Informações Gerais: </h4>
-   <p1> <strong><i>Nome : </i></strong>César Antonio da Silva Xavier Júnior<br>
-        <strong><i>Idade : </i></strong>28 anos <br>
-        <strong><i>Nacionalidade : </i></strong>Brasileiro <br>
+   <p1 id="par1"> <strong><i>Nome : </i></strong>César Antonio da Silva Xavier Júnior<br>
+        <strong><i>Idade : </i></strong>28 anos<br>
+        <strong><i>Nacionalidade : </i></strong>Brasileiro<br>
         <strong><i>Cidade : </i></strong>Caraguatatuba - SP</p1>
         <hr>
    <h4 id="desc">Descrição: </h4>
@@ -88,7 +107,7 @@ p1 {
         <p2>
         <ol>
             <h4 id="habil">Habilidades:</h4>
-            <li id="empat"><strong>Empatia;</strong></li>
+            <li id="empat"><strong><em>Empatia;</em></strong></li>
             <li class="outrashabil">Empenhado; </li>
             <li class="outrashabil">Comunicativo; </li>
             <li class="outrashabil">Javascript; </li>
@@ -101,6 +120,7 @@ p1 {
     <p3 id="blog"><strong> Blog Recomendado:</strong><br>
     <a href="https://emalgumlugardomundo.com.br/" target="_blank">Em Algum Lugar do Mundo</a> </p3>
     <br>
+    <p>Um blog com boas dicas de viagem !</p>
     <br>
     <p4 id="redes"><strong>Redes Socias:</strong><br>
     <a href="https://www.facebook.com/cesar.xavier.9" target="_blank">Facebook</a> <img class="logos" src="data:image/png;base64,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" alt="logo do face">  <br>
